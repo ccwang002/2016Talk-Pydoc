@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Liang2's Slides</title>
+	<meta name="viewport" content="width=792, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<!-- Icon -->
+	<link href="pics/favicon.png" rel="icon" type="image/x-icon" />
+	<!-- MathJax -->
+	<!-- CSS Stle -->
+	<link rel="stylesheet" href="lib/shower/themes/material/styles/screen-16x10.css">
+	<link rel="stylesheet" href="lib/highlight/styles/github.min.css" type="text/css"/>
+	<link rel="stylesheet" href="static/custom.css" type="text/css"/>
+</head>
+<body class="shower list">
+	<!-- Header in overview -->
+	<header class="caption">
+		<h1>使用 Python 官方說明文件</h1>
+		<p style="line-height: 32px; padding-top:15px;"><a href="http://liang2.tw">Liang Bo Wang (亮亮)</a>, 2016-02-25</p>
+	</header>
+
+	<!-- Cover Slide -->
+	<section id="cover" class="slide no-slide-number">
+		<h2 id="talk-header">使用 Python <br>官方說明文件</h2>
+		<p id="talk-author">
+			By <a href="http://liang2.tw" target="_blank">Liang<sup>2</sup></a> under CC 4.0 BY license
+		</p>
+		<p id="usage-instr">
+			<kbd>Esc</kbd> to overview <br />
+			<kbd>←</kbd> <kbd>→</kbd> to navigate
+		</p>
+		<img src="pics/cover.jpg" class="cover w" alt="">
+		<style>
+			#talk-header,
+			#talk-author {
+				left: 56px;
+			}
+			#talk-header {
+				color: #EEE;
+				text-align: left;
+				font-size: 110px;
+				line-height: 1.3em;
+				text-shadow: -1px 1px 3px #000;
+				bottom: 160px;
+				position: absolute;
+
+			}
+			#talk-author {
+				line-height: 1.2em;
+				text-shadow: -1px 1px 3px #000;
+				bottom: 120px;
+				position: absolute;
+			}
+			#talk-author a {
+				color: #FFFA20;
+			}
+			#cover p {
+				margin: 10px 0 0;
+				color: #FFF;
+				font-size: 32px;
+				opacity: 1;
+			}
+			#usage-instr {
+				position: absolute;
+				text-align: right;
+				right: 30px;
+				bottom: 40px;
+			}
+			#usage-instr kbd {
+				opacity: 0.8;
+				color: #666;
+				background-color: white;
+			}
+			#cover img {
+				opacity: 0.95;
+			}
+			#cover {
+				background: black;
+			}
+		</style>
+	</section>
+
+	<section class="slide" id="orz">
+		<h2>標題詐欺喔，說好的 Django 咧？</h2>
+		<div class="citation next">
+		<img src="pics/orz.png" alt="">
+		<p>Ref: Yandere Simulator</p>
+		</div>
+		<style>
+		#orz .citation {
+			width: 450px;
+			margin: 0 auto;
+		}
+		</style>
+	</section>
+
+	<section class="slide">
+		<h2>Django 初學資源</h2>
+		<ul>
+			<li>Django Girls Taipei 的<a href="https://github.com/djangogirlstaipei/tutorial">《Django Girls 學習指南》</a></li>
+			<li>TP (@uranusjr) 的<a href="https://github.com/uranusjr/django-tutorial-for-programmers">《為程式人寫的 Django Tutorial》</a></li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>大家都說 Python 很好用</h2>
+		<p>問：那要怎麼批次更改檔名？<span class="next">查 StackOverflow（誤）</span></p>
+		<pre language='language-python' class="next"><code>$ python
+Python 3.5.1 (default, Dec  7 2015, 21:59:08)
+[GCC 4.8.4] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> _</code></pre>
+		<p class="next">恩……<span class="next">不知道要的功能的 function 在哪裡……</span></p>
+	</section>
+
+	<section class="slide">
+		<img src="pics/pydoc_home.png" class="cover w" alt="">
+	</section>
+
+	<section class="slide">
+		<h2>好多選項，怎麼讀？</h2>
+		<ol>
+			<li><strong>Tutorial</strong></li>
+			<li><strong>Glossary</strong></li>
+			<li><strong>Library Reference</strong></li>
+			<li><strong>HOWTOS</strong></li>
+			<li><strong>FAQ</strong></li>
+		</ol>
+	</section>
+
+	<section class="slide">
+		<h2>Pydoc 好用附加功能</h2>
+		<ul>
+			<li>Search</li>
+			<li>Code output</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<img class="cover w" src="pics/pydoc_search.png" alt="">
+	</section>
+
+	<section class="slide">
+		<img class="cover w" src="pics/pydoc_code_output.png" alt="">
+	</section>
+
+	<section class="slide">
+		<img class="cover w" src="pics/pydoc_code_output_toggle.png" alt="">
+	</section>
+
+	<section class="slide">
+		<h2>你騙我，官網根本沒這個按鈕</h2>
+		<p class="next">因為它壞掉了……</p>
+		<p class="next">已發 PR <a href="http://bugs.python.org/issue26246">Issue 26246</a>，目前被放置中…</p>
+		<p class="next">暫時解決方式：網址加上 <strong>.tw</strong></p>
+	</section>
+
+	<section class="slide">
+		<h2>建議搭配服用方式</h2>
+		<ul>
+			<li>找本 Python 的中文書</li>
+			<li>再看 Pydoc 的 Tutorial</li>
+			<li>再根據需求看 Pydoc library reference</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>PyDoc Library Reference 例子</h2>
+		<ul>
+			<li><a href="https://docs.python.org/3.5/library/pathlib.html"><code>pathlib</code></a>（基本頁面結構）</li>
+			<li><a href="https://docs.python.org/3.5/library/argparse.html"><code>argparse</code></a>（搭配 how-to 文件）</li>
+			<li><a href="https://docs.python.org/3/library/subprocess.html#subprocess.run"><code>subprocess.run()</code></a>（函數參數）</li>
+			<li><a href="https://docs.python.org/3/library/subprocess.html#subprocess.CompletedProcess"><code>subprocess.CompletedProcess</code></a>、<a href="https://docs.python.org/3/library/collections.html#collections.OrderedDict"><code>collections.OrderedDict</code></a>（物件）</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>常常查 Doc，網頁的搜尋不夠方便怎麼辦？</h2>
+		<ul>
+			<li>HTML 可以下載離線看</li>
+			<li>整合專門查 doc 的軟體：</li>
+			<ul>
+				<li><a href="https://kapeli.com/dash">Dash</a> (OSX)</li>
+				<li><a href="https://zealdocs.org/">Zeal</a> (Linux, Windows)</li>
+				<li><a href="https://velocity.silverlakesoftware.com/">Velocity</a> (Windows)</li>
+			</ul>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>跨不同 Python 版本時</h2>
+		<ul>
+			<li>文件中的註解：<a href="https://docs.python.org/3/library/subprocess.html#subprocess.run"><code>subprocess.run()</code></a></li>
+			<li>What's New / Changelog</li>
+			<li>切換 Python 版本</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>更多 Python 標準函式庫（非新手向）</h2>
+		<ul>
+			<li><a href="http://www.amazon.co.jp/dp/4774177075" target="_blank"><strong>Python ライブラリ厳選レシピ</strong></a><br>
+				池内孝啓，鈴木たかのり，石本敦夫，小坂健二郎，真嘉比愛　著</li>
+				<ul>
+					<li>目前應該只有日文版</li>
+					<li>同時介紹常用的第三方套件</li>
+					<li>了解 Python 到底能做到哪些事，可以參考本書</li>
+				</ul>
+			<li>不確定自己有沒有認真唸 stdlib 嗎？</li>
+			<ul class="next">
+				<li>教你一招，把內容全部用自己的話寫一次</li>
+				<li>網址加上 <strong>.tw</strong> <a href="https://docs.python.org.tw">https://docs.python.org.tw</a></li>
+			</ul>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<img class="cover w" src="pics/pydoctw.png" alt="">
+	</section>
+
+	<section class="slide" id="pydoctw-report">
+		<h2>翻譯有問題怎麼辦？</h2>
+		<p>每一頁的最下面有回報問題的連結</p>
+		<img src="pics/pydoctw_footer.png" alt="">
+		<p>當然能自己解掉最好 :) 下頁簡介翻譯流程。</p>
+		<style>
+			#pydoctw-report img {
+				width: 90%;
+			}
+		</style>
+	</section>
+
+	<section class="slide">
+		<img class="cover w" src="pics/pydoctw_transifex.png" alt="">
+	</section>
+
+	<!-- End Slide -->
+	<section id='end' class='slide no-slide-number'>
+		<h2>?</h2>
+		<img src="pics/end.jpg" class="cover w" alt="">
+		<style>
+			#end h2 {
+				position: absolute;
+				left: 50%;
+				top: 40%;
+				text-align: right;
+				text-shadow: 1px 1px 3px #111;
+				font-size: 120px;
+			}
+		</style>
+	</section>
+
+
+	<!-- END OF SLIDE CONTENT -->
+	<p class="badge">
+		<a href="https://github.com/ccwang002/2016Talk-Pydoc" target="_blank">Sources on GitHub</a>
+	</p>
+	<!--
+	To hide progress bar from entire presentation
+	just remove “progress” element.
+	-->
+	<div class="progress"></div>
+
+	<!-- Library -->
+	<script src="lib/highlight/highlight.pack.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+		hljs.initHighlightingOnLoad();
+	</script>
+	<script src="lib/shower/shower.min.js"></script>
+	<!-- Mathjax -->
+	<!-- During local development, use localhost mathjax for speed-->
+	<!--<script src="file:///Users/liang/.ipython/profile_default/static/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>-->
+	<!-- online Mathjax CDN -->
+	<!--<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>-->
+</body>
+</html>

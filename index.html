@@ -81,7 +81,145 @@
 		</style>
 	</section>
 
+	<section class="slide" id="orz">
+		<h2>標題詐欺喔，說好的 Django 咧？</h2>
+		<div class="citation next">
+		<img src="pics/orz.png" alt="">
+		<p>Ref: Yandere Simulator</p>
+		</div>
+		<style>
+		#orz .citation {
+			width: 450px;
+			margin: 0 auto;
+		}
+		</style>
+	</section>
+
 	<section class="slide">
+		<h2>Django 初學資源</h2>
+		<ul>
+			<li>Django Girls Taipei 的<a href="https://github.com/djangogirlstaipei/tutorial">《Django Girls 學習指南》</a></li>
+			<li>TP (@uranusjr) 的<a href="https://github.com/uranusjr/django-tutorial-for-programmers">《為程式人寫的 Django Tutorial》</a></li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>大家都說 Python 很好用</h2>
+		<p>問：那要怎麼批次更改檔名？<span class="next">查 Stack Overflow（誤）</span></p>
+		<pre language='language-python' class="next"><code>$ python
+Python 3.5.1 (default, Dec  7 2015, 21:59:08)
+[GCC 4.8.4] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> _</code></pre>
+		<p class="next">恩……<span class="next">不知道要的功能的 function 在哪裡……</span></p>
+	</section>
+
+	<section class="slide">
+		<img src="pics/pydoc_home.png" class="cover w" alt="">
+	</section>
+
+	<section class="slide">
+		<h2>好多選項，怎麼讀？</h2>
+		<ul>
+			<li>Tutorial</li>
+			<li>Glossary</li>
+			<li>Library Reference</li>
+			<li>HOWTOS</li>
+			<li>FAQ</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Pydoc 好用附加功能</h2>
+		<ul>
+			<li>Search</li>
+			<li>Code output</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<img class="cover w" src="pics/pydoc_search.png" alt="">
+	</section>
+
+	<section class="slide">
+		<img class="cover w" src="pics/pydoc_code_output.png" alt="">
+	</section>
+
+	<section class="slide">
+		<img class="cover w" src="pics/pydoc_code_output_toggle.png" alt="">
+	</section>
+
+	<section class="slide">
+		<h2>你騙我，官網根本沒這個按鈕</h2>
+		<p class="next">因為它壞掉了……</p>
+		<p class="next">已發 PR <a href="http://bugs.python.org/issue26246">Issue 26246</a>，目前被放置中…</p>
+	</section>
+
+	<section class="slide">
+		<h2>建議搭配服用方式</h2>
+		<ul>
+			<li>找本 Python 的中文書</li>
+			<li>再看 Pydoc 的 Tutorial</li>
+			<li>再根據需求看 Pydoc library reference</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>PyDoc Library Reference 例子</h2>
+		<ul>
+			<li><a href="https://docs.python.org/3.5/library/pathlib.html"><code>pathlib</code></a>（基本頁面結構）</li>
+			<li><a href="https://docs.python.org/3.5/library/argparse.html"><code>argparse</code></a>（搭配 how-to 文件）</li>
+			<li><a href="https://docs.python.org/3/library/subprocess.html#subprocess.run"><code>subprocess.run()</code></a>（函數參數）</li>
+			<li><a href="https://docs.python.org/3/library/subprocess.html#subprocess.CompletedProcess"><code>subprocess.CompletedProcess</code></a>、<a href="https://docs.python.org/3/library/collections.html#collections.OrderedDict"><code>collections.OrderedDict</code></a>（物件）</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>常常查 Doc，網頁的搜尋不夠方便怎麼辦？</h2>
+		<ul>
+			<li>HTML 可以下載離線看</li>
+			<li>整合專門查 doc 的軟體：</li>
+			<ul>
+				<li><a href="https://kapeli.com/dash">Dash</a> (OSX)</li>
+				<li><a href="https://zealdocs.org/">Zeal</a> (Linux, Windows)</li>
+				<li><a href="https://velocity.silverlakesoftware.com/">Velocity</a> (Windows)</li>
+			</ul>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>跨不同 Python 版本時</h2>
+		<ul>
+			<li>文件中的註解：<a href="https://docs.python.org/3/library/subprocess.html#subprocess.run"><code>subprocess.run()</code></a></li>
+			<li>What's New / Changelog</li>
+			<li>切換 Python 版本</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>更多 Python 標準函式庫（非新手向）</h2>
+		<ul>
+			<li><a href="http://www.amazon.co.jp/dp/4774177075" target="_blank"><strong>Python ライブラリ厳選レシピ</strong></a><br>
+				池内孝啓，鈴木たかのり，石本敦夫，小坂健二郎，真嘉比愛　著</li>
+				<ul>
+					<li>目前應該只有日文版</li>
+					<li>同時介紹常用的第三方套件</li>
+					<li>了解 Python 到底能做到哪些事，可以參考本書</li>
+				</ul>
+			<li>不確定自己有沒有認真唸 stdlib 嗎？</li>
+			<ul class="next">
+				<li>教你一招，把內容全部用自己的話寫一次</li>
+				<li>網址加上 <strong>.tw</strong> <a href="https://docs.python.org.tw">https://docs.python.org.tw</a></li>
+			</ul>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<img class="cover w" src="pics/pydoctw.png" alt="">
+	</section>
+
+	<section class="slide">
+		<img class="cover w" src="pics/pydoctw_transifex.png" alt="">
 	</section>
 
 	<!-- End Slide -->
